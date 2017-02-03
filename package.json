@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "~2.1.7",
+    "gulp-connect": "^5.0.0",
+    "gulp-uglify": "~0.2.0",
+    "gulp-util": "^2.2.20",
+    "gulp-webserver": "^0.9.1"
+  }
+}

@@ -1,8 +1,10 @@
-var gulp = require('gulp'),
-  connect = require('gulp-connect');
-
-gulp.task('connect', function() {
-  connect.server();
+var gulp = require('gulp');
+var webserver = require('gulp-webserver');
+ 
+gulp.task('default', function() {
+  gulp.src('app/index.html')
+    .pipe(webserver({
+      livereload: true,
+      https: true
+    }));
 });
-
-gulp.task('default', ['connect']);
